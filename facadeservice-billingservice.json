@@ -1,0 +1,51 @@
+{
+    "provider": {
+        "name": "billingservice"
+    },
+    "consumer": {
+        "name": "facadeservice"
+    },
+    "interactions": [
+        {
+            "description": "GET all orders from an user",
+            "request": {
+                "method": "GET",
+                "path": "/api/billingservice/v1/orders",
+                "headers": {
+                    "Authorization": "Bearer 1ad90ecf-46e8-4ead-b5cb-79826ad71ddc",
+                    "Accept": "application/json",
+                    "Content-Type": "application/json"
+                }
+            },
+            "response": {
+                "status": 200,
+                "headers": {
+                    "Content-Type": "application/json"
+                },
+                "body": [
+                    {
+                        "accountId": null,
+                        "accountName": null,
+                        "id": null,
+                        "orderType": null,
+                        "purchaseDate": null,
+                        "ratePlans": [
+                            
+                        ],
+                        "status": null,
+                        "transactionId": null
+                    }
+                ]
+            },
+            "providerState": "test state"
+        }
+    ],
+    "metadata": {
+        "pact-specification": {
+            "version": "2.0.0"
+        },
+        "pact-jvm": {
+            "version": "3.3.6"
+        }
+    }
+}
